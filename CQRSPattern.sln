@@ -5,6 +5,10 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSPattern.API", "CQRSPattern.API\CQRSPattern.API.csproj", "{308B177C-9B23-4537-B050-F0BE06581095}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSPattern.Core", "CQRSPattern.Core\CQRSPattern.Core.csproj", "{B1E87432-9140-4575-9A85-BA2C99D3B3CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSPattern.Repository", "CQRSPattern.Repository\CQRSPattern.Repository.csproj", "{17533CE7-3CA4-4D4A-81A8-293E85EC4FC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{308B177C-9B23-4537-B050-F0BE06581095}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{308B177C-9B23-4537-B050-F0BE06581095}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{308B177C-9B23-4537-B050-F0BE06581095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1E87432-9140-4575-9A85-BA2C99D3B3CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1E87432-9140-4575-9A85-BA2C99D3B3CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1E87432-9140-4575-9A85-BA2C99D3B3CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1E87432-9140-4575-9A85-BA2C99D3B3CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17533CE7-3CA4-4D4A-81A8-293E85EC4FC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17533CE7-3CA4-4D4A-81A8-293E85EC4FC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17533CE7-3CA4-4D4A-81A8-293E85EC4FC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17533CE7-3CA4-4D4A-81A8-293E85EC4FC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

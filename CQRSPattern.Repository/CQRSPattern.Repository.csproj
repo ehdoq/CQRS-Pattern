@@ -19,4 +19,8 @@
     <ProjectReference Include="..\CQRSPattern.Core\CQRSPattern.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="CQRS\" />
+  </ItemGroup>
+
 </Project>
