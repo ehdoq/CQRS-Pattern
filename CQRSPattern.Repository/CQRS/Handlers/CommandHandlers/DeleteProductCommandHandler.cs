@@ -1,5 +1,5 @@
 ﻿using CQRSPattern.Repository.AppDBContext;
-using CQRSPattern.Repository.CQRS.Command.Request;
+using CQRSPattern.Repository.CQRS.Commands.Request;
 using CQRSPattern.Repository.CQRS.Commands.Response;
 using MediatR;
 
@@ -18,7 +18,7 @@ namespace CQRSPattern.Repository.CQRS.Handlers.CommandHandlers
         {
             var product = _context.Products.FirstOrDefault(p => p.Id == request.Id);
 
-            _context.Remove(product);
+            _context.Products.Remove(product);
 
             await _context.SaveChangesAsync();
 

@@ -1,6 +1,6 @@
 ﻿using CQRSPattern.Core.Entities;
 using CQRSPattern.Repository.AppDBContext;
-using CQRSPattern.Repository.CQRS.Command.Request;
+using CQRSPattern.Repository.CQRS.Commands.Request;
 using CQRSPattern.Repository.CQRS.Commands.Response;
 using MediatR;
 

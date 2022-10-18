@@ -1,4 +1,4 @@
-﻿using CQRSPattern.Repository.CQRS.Command.Request;
+﻿using CQRSPattern.Repository.CQRS.Commands.Request;
 using CQRSPattern.Repository.CQRS.Commands.Response;
 using CQRSPattern.Repository.CQRS.Queries.Request;
 using CQRSPattern.Repository.CQRS.Queries.Response;
@@ -33,9 +33,16 @@ namespace CQRSPattern.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(CreateProductCommandRequest requestModel)
+        public async Task<IActionResult> Create(CreateProductCommandRequest requestModel)
         {
             CreateProductCommandResponse response = await _mediator.Send(requestModel);
+            return Ok(response);
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> Update(UpdateProductCommandRequest requestModel)
+        {
+            UpdateProductCommandResponse response = await _mediator.Send(requestModel);
             return Ok(response);
         }
 
